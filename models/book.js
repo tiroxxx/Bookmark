@@ -11,7 +11,6 @@ module.exports = function (sequelize, DataTypes) {
         number_of_pages: DataTypes.TEXT,
         date_published: DataTypes.TEXT,
         publisher: DataTypes.TEXT,
-        genre: DataTypes.TEXT,
         amazon_link: DataTypes.TEXT,
         recommendation: DataTypes.TEXT,
         description: DataTypes.TEXT
