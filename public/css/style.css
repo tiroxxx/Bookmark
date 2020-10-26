@@ -1,0 +1,241 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*footer*/
+
+.ankle {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-color: black;
+  border-top: solid;
+}
+
+.copyR1 {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 78px;
+  position: fixed;
+  text-align: center;
+  background-color: white;
+  border-color: black;
+  border-top: solid;
+  margin-bottom: -20px;
+  padding-top: 20px;
+}
+
+.copyR {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Jazz LET, fantasy;
+  padding-bottom: 10px;
+  margin-bottom: -15px
+}
+
+.markF, .connect {
+  color: #cc0000;
+  font-weight: bold;
+  font-family: Optima, sans-serif
+}
+
+.bookF {
+  font-weight: bold;
+  font-family: Optima, sans-serif
+}
+
+.gitPic {
+  height: 30px;
+}
+
+.ourPic {
+  border-radius: 50px;
+  height: 40px;
+}
+
+.connect {
+  float: left;
+  padding-right: 5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 70px;
+  padding-top: 20px;
+}
+
+.bookQuote {
+  padding-top: 50px;
+}
+
+/* Navbar for members, log in, sign in pages */
+
+#homeBtn {
+  color: white;
+  background-color: black;
+  margin-top: 10px;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  float: right;
+  margin-right: 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+#signupBtn {
+  color: black;
+  margin-top: 10px;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  float: right;
+  margin-right: 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.navbar {
+  background-color: white;
+  border-radius: 0 !important;
+}
+
+#logoNav {
+  padding-left: -5px;
+}
+
+/* image for members, log in and sign in page */
+
+.loginPage, .memberPage, .signupPage {
+  background-image: url("../img/pexels-janko-ferlic-590493.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* card-body for members, log in and sign in html */
+
+.card-body {
+  background-color: rgba(245, 245, 245, 0.5);
+  margin-top: 80px;
+  padding: 40px;
+  padding-bottom: 80px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* image for index and books html */
+
+#forImg {
+  background-image: url("../img/books_old_reading_124989_2560x1080.jpg");
+  height: auto;
+  background-size: cover;
+  padding-bottom: 10px;
+}
+
+#forImg2 {
+  background-image: url("../img/books_old_reading_124989_2560x1080.jpg");
+  height: auto;
+  background-size: cover;
+  padding-bottom: 10px;
+}
+
+/* Google Maps API */
+
+.google-maps {
+  border: white;
+  box-shadow: 0 0 8px 2px;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  height: 300px;
+  margin-top: -200px;
+  margin-bottom: -80px;
+}
+
+/* Set the size of the div element that contains the map */
+
+#map {
+  height: 300px;
+  width: auto;
+}
+
+/* Panel that displays all of the info about local tattoo shops */
+
+#panel {
+  height: 300px;
+  width: null;
+  background-color: lightgrey;
+  float: left;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.2s ease-out;
+  font-size: smaller;
+}
+
+/* Only when the panel is open */
+
+.open {
+  width: 250px;
+}
+
+/* Styling for place details */
+
+.hero {
+  width: 100%;
+  height: auto;
+  max-height: 166px;
+  display: block;
+}
+
+.place {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  word-wrap: break-word;
+  padding: 15px;
+  color: black;
+}
+
+.details, .p1 {
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.cover-img {
+  width: 200px;
+  height: 300px;
+}
+
+.book-element {
+  box-shadow: 2px 2px 7px black;
+}
+
+.content {
+  font-family: 'Crimson Text', serif;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
+
+.book-page {
+  font-family: 'Crimson Text', serif;
+  color: white;
+  background-color: black;
+  opacity: 80%;
+  padding-bottom: 0;
+  border-radius: 10px;
+}
+
+p.content.book-page {
+  margin-bottom: 0;
+}
+
+.float-right {
+  float: right;
+}

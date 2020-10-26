@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <!-- Bulma.io Framework -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css"
+    integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Oswald:wght@500&display=swap"
+    rel="stylesheet">
+  <!-- Custom Style Sheet  -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+  <!--NavBar-->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/loggedin">
+        <img src="./img/images1.png" width="112" height="28">
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/loggedin">Home</a>
+        <a class="navbar-item" href="/members"> Members</a>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+
+          <a class="button is-dark" href="/signup"><strong>Sign Up</strong></a>
+          <a class="button is-light" href="/login">Log In</a>
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--End of navbar-->
+
+  <section id="forImg" class="section is-large" style="background-color: #4d4d4d;  border-bottom: 3px solid black">
+    <div class="container" style="bottom: 230px;">
+      <div class="column has-text-centered" style="display: flex; justify-content: center">
+        <div class="field has-addons">
+          <p class="control">
+            <a id="recommended" class="button">
+              <span class="icon is-small">
+                <i class="fas fa-bookmark"></i>
+              </span>
+              <span>Recomended</span>
+            </a>
+          </p>
+          <a href=""></a>
+          <p class="control">
+            <a id="search-button" class="button">
+              <span class="icon is-small">
+                <i class="fas fa-search"></i>
+              </span>
+              <span>Search</span>
+            </a>
+          </p>
+          <p class="control">
+            <a id="create-button" class="button">
+              <span class="icon is-small">
+                <i class="fas fa-book"></i>
+              </span>
+              <span>Add a book</span>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="column search-elements is-hidden" style="padding: 10px; display: flex; justify-content: center;">
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input id="author-input" class="input" type="text" placeholder="Search by author">
+          </p>
+          <p class="control">
+            <a id="get-author" class="button is-dark">
+              Search
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="column search-elements is-hidden" style="padding: 10px;  display: flex; justify-content: center;">
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input id="title-input" class="input" type="text" placeholder="Search by title">
+          </p>
+          <p class="control">
+            <a id="get-title" class="button is-dark">
+              Search
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="column create-elements is-hidden" style="padding: 10px; display: flex; justify-content: center;">
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input id="book-title-input" class="input" type="text" placeholder="Enter Title">
+          </p>
+        </div>
+      </div>
+      <div class="column create-elements is-hidden" style="padding: 10px;  display: flex; justify-content: center;">
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input id="book-author-input" class="input" type="text" placeholder="Enter Author">
+          </p>
+        </div>
+      </div>
+      <div class="column create-elements is-hidden" style="padding: 10px; display: flex; justify-content: center;">
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input id="number-of-pages is-hidden" class="input" type="text" placeholder="Enter Number of Pages">
+          </p>
+        </div>
+      </div>
+      <div class="column create-elements is-hidden" style="padding: 10px;  display: flex; justify-content: center;">
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input id="date-published" class="input" type="text" placeholder="Enter Date Published">
+          </p>
+        </div>
+      </div>
+      <div class="column create-elements is-hidden" style="padding: 10px; display: flex; justify-content: center;">
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input id="publisher" class="input" type="text" placeholder="Enter Publisher">
+          </p>
+        </div>
+      </div>
+      <div class="column create-elements is-hidden" style="padding: 10px;  display: flex; justify-content: center;">
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input id="genre" class="input" type="text" placeholder="Enter Genre">
+          </p>
+        </div>
+      </div>
+      <div class="column create-elements is-hidden" style="padding: 10px;  display: flex; justify-content: center;">
+        <div class="field">
+          <textarea id="description" class="textarea" placeholder="Enter brief Synopsis"></textarea>
+        </div>
+      </div>
+      <div class="column create-elements has-text-center is-hidden" style="display: flex; justify-content: center;">
+        <p class="control">
+          <a id="input-submit" class="button is-dark">
+            Submit
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- results div -->
+  <section class="section is-large result-div" style="padding-top: 20px; background-color: #e6e6e6;">
+    <div class="container">
+      <div class="results has-text-centered"></div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="toe">
+    <div class="ankle">
+      <img src="./img/images.png"></div>
+    <div class="columns is-multiline is-mobile">
+
+      <div class="column is-one-quarter">
+        <div class="connect">
+          <h6>Creators:</h6>
+          <br>
+          <ul>
+            <li>
+              <img class="ourPic" src="./img/70029613.jpg">
+              <a href="https://github.com/tiroxxx" target="_blank"><img class="gitPic"
+                  src="./img/iconfinder_social__media__social_media__github__3259374 (1).png" title="github"
+                  alt="Github"></a>
+
+              <img class="ourPic" src="./img/69640390.jpg">
+              <a href="https://github.com/brigil" target="_blank"><img class="gitPic"
+                  src="./img/iconfinder_social__media__social_media__github__3259374 (1).png" title="github"
+                  alt="Github"></a>
+            </li>
+            <li>
+              <img class="ourPic" src="./img/70404735.png">
+              <a href="https://github.com/Lyricsduda" target="_blank"><img class="gitPic"
+                  src="./img/iconfinder_social__media__social_media__github__3259374 (1).png" title="github"
+                  alt="Github"></a>
+
+
+              <img class="ourPic" src="./img/70517707.jpg">
+              <a href="https://github.com/mora5925" target="_blank"><img class="gitPic"
+                  src="./img/iconfinder_social__media__social_media__github__3259374 (1).png" title="github"
+                  alt="Github"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="bookQuote">
+          <blockquote>
+            <p>“Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us
+              that dragons can be beaten.”
+              – Neil Gaiman</p>
+          </blockquote>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="connect">
+          <h6>Quick Links:</h6>
+          <br>
+          <ul>
+            <li><a class="signIn" href="./signup.html"> Sign In</a></li>
+            <li><a class="logIn" href="./login.html"> Log In</a></li>
+            <li> <a class="members" href="./members.html"> Members</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <h5 class="copyR"><span class="bookF"> &copy; Book</span><span class="markF">Mark </span> | los-bookies</h5>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

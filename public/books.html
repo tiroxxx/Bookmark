@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <!-- Bulma.io Framework -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css"
+    integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA=="
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Oswald:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <!-- Custom Style Sheet  -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+
+
+  <!--NavBar-->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./loggedin.html">
+        <img src="./img/images1.png" width="112" height="28">
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="./loggedin.html">Home</a>
+        <a class="navbar-item" href="./members.html"> Members</a>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-dark" href="./signup.html"><strong>Sign Up</strong></a>
+          <a class="button is-light" href="./login.html">Log In</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--End of navbar-->
+
+  <section id="forImg2" class="section is-large"
+    style="padding-top: 0; background-color: #4d4d4d;  border-bottom: 3px solid black; border-top: 3px solid black">
+    <div class="container columns">
+      <div class="column">
+        <div id="book-result">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section2 is-large" style="background-color: #e6e6e6; height: 400px;">
+    <div class="container">
+      <div class="column has-text-centered">
+        <br><br><Br><br><br><br><br><br><br><br>
+        <!-- Google Maps -->
+        <div class="google-maps">
+          <!-- Google Places info -->
+          <div id="panel"></div>
+          <!-- The actual map -->
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer id="toe">
+    <div class="ankle">
+      <img src="./img/images.png"></div>
+
+    <div class="columns is-multiline is-mobile">
+
+      <div class="column is-one-quarter">
+        <div class="connect">
+          <h6>Creators:</h6>
+          <br>
+          <ul>
+            <li>
+              <img class="ourPic" src="./img/70029613.jpg">
+              <a href="https://github.com/tiroxxx" target="_blank"><img class="gitPic"
+                  src="./img/iconfinder_social__media__social_media__github__3259374 (1).png" title="github"
+                  alt="Github"></a>
+
+              <img class="ourPic" src="./img/69640390.jpg">
+              <a href="https://github.com/brigil" target="_blank"><img class="gitPic"
+                  src="./img/iconfinder_social__media__social_media__github__3259374 (1).png" title="github"
+                  alt="Github"></a>
+            </li>
+            <li>
+              <img class="ourPic" src="./img/70404735.png">
+              <a href="https://github.com/Lyricsduda" target="_blank"><img class="gitPic"
+                  src="./img/iconfinder_social__media__social_media__github__3259374 (1).png" title="github"
+                  alt="Github"></a>
+
+
+              <img class="ourPic" src="./img/70517707.jpg">
+              <a href="https://github.com/mora5925" target="_blank"><img class="gitPic"
+                  src="./img/iconfinder_social__media__social_media__github__3259374 (1).png" title="github"
+                  alt="Github"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="bookQuote">
+          <blockquote>
+            <p>“Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us
+              that dragons can be beaten.”
+              – Neil Gaiman</p>
+          </blockquote>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="connect">
+          <h6>Quick Links:</h6>
+          <br>
+          <ul>
+            <li><a class="signIn" href="./signup.html"> Sign In</a></li>
+            <li><a class="logIn" href="./login.html"> Log In</a></li>
+            <li> <a class="members" href="./members.html"> Members</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h5 class="copyR"><span class="bookF"> &copy; Book</span><span class="markF">Mark </span> | los-bookies</h5>
+  </footer>
+  <!--End of Footer-->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWtRQlguUx0Uhj3jgmV0e1UwUDsNQ9gPs&libraries=places&callback=initMap"></script>
+  <script src="./js/books.js"></script>
+</body>
+
+</html>
