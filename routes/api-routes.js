@@ -82,7 +82,7 @@ module.exports = function (app) {
     db.Book.findAll({
       where: {
         average_rating: {
-          [Op.gte]: 4.9
+          [Op.gte]: 4
         }
       }
     })
